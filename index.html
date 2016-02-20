@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bar</title>
+    <!-- inject:css -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <!-- endinject -->
+</head>
+<body>
+    <div class="container" ng-app="app">
+        <div class="row">
+            <div class="col-md-12" ng-controller="ctrl">
+                {{message}}
+            </div>
+        </div>
+    </div>
+    <!-- lib:js -->
+    <script src="/node_modules/angular/angular.min.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="/app/app.js"></script>
+    <script src="/app/routes.js"></script>
+    <!-- endinject -->
+</body>
+</html>
