@@ -20,13 +20,13 @@ gulp.task('inject', function () {
         .pipe(gulp.dest('.'))
 });
 
-gulp.task('auto-inject', function () {
-    var src = 'app/**/*.js';
-    var watcher = gulp.watch(src);
-    watcher.on('add', function () {
-        return gulp.src('index.html')
-            .pipe(inject(gulp.src('app/**/*.js', { read: false })))//own js
-            .pipe(gulp.dest('.'));
-    });
-
-})
+// gulp.task('auto-inject', function () {
+//     var src = 'app/**/*.js';
+//     var watcher = gulp.watch(src);
+//     watcher.on('add', function () {
+//         return gulp.src('index.html')
+//             .pipe(inject(gulp.src('app/**/*.js', { read: false })))//own js
+//             .pipe(gulp.dest('.'));
+//     });
+// 
+// })
