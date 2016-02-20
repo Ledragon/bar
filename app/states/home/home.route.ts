@@ -5,7 +5,7 @@ module app {
                 controller: 'home',
                 controllerAs: 'vm',
                 templateUrl: 'app/states/home/home.html',
-                url: 'home'
-            })
-        }])
+                url: '/home'
+            });
+        }]);
 }
