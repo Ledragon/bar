@@ -11,6 +11,15 @@ gulp.task('serve', function () {
     });
     gulp.watch(['./**/*.html', './app/**/*.js'], browserSync.reload);
 });
+gulp.task('serve-build', function () {
+    gulp.src('app/**/*.html')
+    .pipe(gulp.dest('./build/app'));
+    browserSync.init({
+        server: {
+            baseDir: './build'
+        }
+    });
+});
 
 gulp.task('inject', function () {
     return gulp.src('index.html')

@@ -21,6 +21,7 @@
     "browser-sync": "^2.11.1",
     "gulp": "^3.9.1",
     "gulp-inject": "^3.0.0",
+    "systemjs-builder": "^0.15.9",
     "typescript": "^1.7.5",
     "typings": "^0.6.8"
   }

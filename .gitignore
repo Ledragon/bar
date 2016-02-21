@@ -2,4 +2,6 @@ node_modules
 *.log
 app/**/*.js
 app/**/*.js.map
+!app/System.config.js
 typings
+build

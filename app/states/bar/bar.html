@@ -1,17 +1,11 @@
 <div>
-    <style>
-        .bar {
-            width: 100%;
-            background: red;
-        }
-    </style>
     <div class="jumbotron">
         <h1>Bar</h1>
     </div>
     <div class="container-fluid">
         <div class="row" ng-repeat="bottle in vm.bottles" style="border:1px black solid">
             <div class="col-sm-3">
-                <img src="{{bottle.imageUrl}}" alt="Picture" style="max-height:200px">
+                <img src="{{bottle.imageUrl}}" alt="Picture" style="max-height:200px" ng-cloak>
             </div>
             <div class="col-sm-9">
                 {{bottle.name}}
