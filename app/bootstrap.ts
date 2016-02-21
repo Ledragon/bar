@@ -3,6 +3,7 @@ import 'router';
 
 angular.module('app', ['ui.router']);
 
-angular.element(document).ready(() => {
-    angular.bootstrap(document, ['app']);
-});
+angular.element(document)
+    .ready(() => {
+        angular.bootstrap(document, ['app']);
+    });

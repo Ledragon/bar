@@ -1,10 +1,23 @@
 <div>
+    <style>
+        .bar {
+            width: 100%;
+            background: red;
+        }
+    </style>
     <div class="jumbotron">
         <h1>Bar</h1>
     </div>
-    <ul>
-        <li ng-repeat="bottle  in vm.bottles">
-            {{bottle.name}}
-        </li>
-    </ul>
+    <div class="container-fluid">
+        <div class="row" ng-repeat="bottle in vm.bottles" style="border:1px black solid">
+            <div class="col-sm-3">
+                <img src="{{bottle.imageUrl}}" alt="Picture" style="max-height:200px">
+            </div>
+            <div class="col-sm-9">
+                {{bottle.name}}
+                <br> {{bottle.type}}
+                <br> {{bottle.comment}}
+            </div>
+        </div>
+    </div>
 </div>
