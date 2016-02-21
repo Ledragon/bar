@@ -1,25 +1,27 @@
 {
-    "name": "Bar",
-    "version": "0.0.0",
-    "description": "",
-    "main": "index.js",
-    "scripts": {
-        "tsc:w": "tsc -w",
-        "serve":"gulp serve",
-        "build": "tsc"
-    },
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-        "angular": "^1.5.0",
-        "angular-ui-router": "^0.2.18",
-        "bootstrap": "^3.3.6"
-    },
-    "devDependencies": {
-        "browser-sync": "^2.11.1",
-        "gulp": "^3.9.1",
-        "gulp-inject": "^3.0.0",
-        "typescript": "^1.7.5",
-        "typings": "^0.6.8"
-    }
+  "name": "Bar",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "tsc:w": "tsc -w",
+    "serve": "gulp serve",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-ui-router": "^0.2.18",
+    "bootstrap": "^3.3.6",
+    "es6-module-loader": "^0.17.11",
+    "systemjs": "^0.19.22"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^3.0.0",
+    "typescript": "^1.7.5",
+    "typings": "^0.6.8"
+  }
 }

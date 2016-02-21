@@ -7,22 +7,34 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- endinject -->
+    <script src="/node_modules/systemjs/dist/system.js"> </script>
+    <script>
+        System.config({
+            baseURL:'/',
+            paths:{
+                'angular':'node_modules/angular/angular.js',
+                'router':'node_modules/angular-ui-router/release/angular-ui-router.js'
+            }
+        });
+        System.import('app/app.js');
+    </script>
 </head>
 <body>
-    <div class="container" ng-app="app">
-        <ui-view></ui-view>
+    <div class="container">
+        <!--<ui-view></ui-view>-->
+        <div ng-controller="main">{{vm.message}}</div>
     </div>
     <!-- lib:js -->
-    <script src="/node_modules/angular/angular.min.js"></script>
-    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>
+    <!--<script src="/node_modules/angular/angular.js"></script>
+    <script src="/node_modules/angular-ui-router/release/angular-ui-router.js"></script>-->
     <!-- endinject -->
     <!-- inject:js -->
-    <script src="/app/app.js"></script>
-    <script src="/app/routes.js"></script>
+    <!--<script src="/app/app.js"></script>-->
+    <!--<script src="/app/routes.js"></script>
     <script src="/app/states/bar/bar.controller.js"></script>
     <script src="/app/states/bar/bar.route.js"></script>
     <script src="/app/states/home/home.controller.js"></script>
-    <script src="/app/states/home/home.route.js"></script>
+    <script src="/app/states/home/home.route.js"></script>-->
     <!-- endinject -->
 </body>
 </html>
