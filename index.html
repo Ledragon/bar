@@ -7,7 +7,17 @@
     <!-- inject:css -->
     <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <!-- endinject -->
-    <script src="/node_modules/systemjs/dist/system.js"> </script>
+    <!-- lib:js -->
+    <script src="/node_modules/es6-shim/es6-shim.js"></script>
+    <script src="/node_modules/systemjs/dist/system-polyfills.js"></script>
+    <script src="/node_modules/angular2/es6/dev/src/testing/shims_for_IE.js"></script>
+    <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
+    <script src="/node_modules/systemjs/dist/system.js"></script>
+    <script src="/node_modules/rxjs/bundles/rx.js"></script>
+    <script src="/node_modules/angular2/bundles/upgrade.js"></script>
+    <script src="/node_modules/angular2/bundles/angular2.dev.js"></script>
+    <!-- endinject -->
+    
     <script src="app/System.config.js"></script>
 </head>
 <body>
@@ -15,5 +25,6 @@
     <div class="container">
         <ui-view></ui-view>
     </div>
+    <my-component></my-component>
 </body>
 </html>

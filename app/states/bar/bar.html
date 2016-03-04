@@ -3,16 +3,7 @@
         <h1>Bar</h1>
     </div>
     <div class="container-fluid">
-        <div class="row" ng-repeat="bottle in vm.bottles" style="border:1px black solid">
-            <div class="col-sm-3">
-                <img src="{{bottle.imageUrl}}" alt="Picture" style="max-height:200px" ng-cloak>
-            </div>
-            <div class="col-sm-9">
-                {{bottle.name}}
-                <br> {{bottle.type}}
-                <br> {{bottle.comment}}
-            </div>
-        </div>
+        <bottle [bottle]="bottle" ng-repeat="bottle in vm.bottles"></bottle>
         <div class="row">
             <div class="col-md-3">
                 <button class="btn" ui-sref="addBottle">Add bottle</button>

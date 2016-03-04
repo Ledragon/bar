@@ -4,15 +4,16 @@ import {BarService} from './bar.service';
 
 angular.module('app')
     .config(['$stateProvider', ($stateProvider: angular.ui.IStateProvider) => {
-        $stateProvider.state('bar', {
-            controller: BarController.controllerId,
-            controllerAs: 'vm',
-            templateUrl: 'app/states/bar/bar.html',
-            url: '/bar'
-        })
+        $stateProvider
+            .state('bar', {
+                controller: BarController.controllerId,
+                controllerAs: 'vm',
+                templateUrl: 'app/states/bar/bar.html',
+                url: '/bar'
+            })
             .state('addBottle', {
                 controller: AddBottleController.controllerId,
-                controllerAs:'vm',
+                controllerAs: 'vm',
                 templateUrl: 'app/states/bar/addBottle.html',
                 url: '/addBottle'
             });
