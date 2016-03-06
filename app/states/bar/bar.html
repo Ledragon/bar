@@ -3,7 +3,7 @@
         <h1>Bar</h1>
     </div>
     <div class="container-fluid">
-        <bottle [bottle]="bottle" ng-repeat="bottle in vm.bottles"></bottle>
+        <bottle [bottle]="bottle"  *ngFor="#bottle of bottles"></bottle>
         <div class="row">
             <div class="col-md-3">
                 <button class="btn" ui-sref="addBottle">Add bottle</button>

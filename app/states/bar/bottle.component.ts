@@ -1,4 +1,5 @@
 import { Component, Injectable, Input } from 'angular2/core';
+import {bottle} from '../../models/bottle';
 
 @Component({
     selector: 'bottle',
@@ -17,9 +18,7 @@ import { Component, Injectable, Input } from 'angular2/core';
 
 @Injectable()
 export class BottleComponent {
-    @Input() bottle: any;
-    name: string;
+    @Input() bottle: bottle;
     constructor() {
-        this.name = 'Component';
     }
 }
