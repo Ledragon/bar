@@ -2,6 +2,7 @@ import {bottle} from '../../models/bottle';
 
 export class BarService {
     public static serviceId = 'BarService';
+    
     private _bottles: bottle[] = [
         {
             name: 'The Dalmore 15years',
@@ -22,5 +23,6 @@ export class BarService {
 
     add(newBottle: bottle) {
         this._bottles.push(newBottle);
+        console.log(this._bottles);
     }
 }
