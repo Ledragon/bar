@@ -1,8 +1,16 @@
-// import { Component } from 'angular2/core';
+import 'angular';
+import { Component } from 'angular2/core';
+import { upgradeAdapter } from './upgradeAdapter';
 
+@Component({
+    selector: 'app',
+    template: '<ui-view></ui-view>'
+})
+export class AppComponent {
+    constructor() {
 
+    }
+}
 
-// @Component({
-//     selector: 'app',
-
-// })
+angular.module('app')
+    .directive('app', upgradeAdapter.downgradeNg2Component(AppComponent));

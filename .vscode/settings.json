@@ -4,6 +4,7 @@
         "**/.git": true,
         "**/.DS_Store": true,
         "app/**/*.js": true,
+        "app/**/*.*.js": true,
         "app/System.config.js": false,
         "app/**/*.js.map": true
     }

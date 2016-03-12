@@ -1,12 +1,21 @@
-import {HomeController} from './home.controller';
+import 'angular';
+import {HomeComponent} from './home.component';
+import { upgradeAdapter } from '../../upgradeAdapter';
 
+// import { RouteConfig } from 'angular2-polyfill/router';
+// // @RouteConfig([
+// //     { path: '/home', component: HomeComponent, name: 'home', useAsDefault: false }
+// // ])
+// export  class HomeRouteComponent {
+//     constructor() {
+
+//     }
+// }
 angular.module('app')
     .config(['$stateProvider', ($stateProvider: angular.ui.IStateProvider) => {
         $stateProvider.state('home', {
-            controller: HomeController.controllerId,
-            controllerAs: 'vm',
-            templateUrl: 'app/states/home/home.html',
+            template: '<home></home>',
             url: '/home'
         });
     }])
-    .controller(HomeController.controllerId, HomeController);
+    .directive('home', upgradeAdapter.downgradeNg2Component(HomeComponent));
