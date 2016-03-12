@@ -10,6 +10,7 @@ var config =  {
             "node_modules/systemjs/dist/system.js",
             "node_modules/rxjs/bundles/rx.js",
             "node_modules/angular2/bundles/upgrade.js",
+            "node_modules/angular2/bundles/router.js",
             
             "node_modules/angular2/bundles/angular2.dev.js"]
     }

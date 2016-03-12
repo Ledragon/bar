@@ -4,12 +4,12 @@ angular.module('app')
     .config(['$stateProvider', ($stateProvider: angular.ui.IStateProvider) => {
         $stateProvider
             .state('bar', {
-                template: '<bar-overview></bar-overview>',
+                template: '<bar></bar>',
                 url: '/bar'
             })
-            .state('bar.general', {
-                template: '<bar></bar>',
-                url: '/general'
+            .state('barOverview', {
+                template: '<bar-overview></bar-overview>',
+                url: '/barOverview'
             })
             .state('addBottle', {
                 template: '<add-bottle></add-bottle>',

@@ -5,7 +5,8 @@ import {bottle} from '../../models/bottle';
 
 @Component({
     selector: 'add-bottle',
-    templateUrl: 'app/states/bar/addBottle.html'
+    templateUrl: 'app/states/bar/addBottle.html',
+    providers: [BarService]
 })
 @Injectable()
 export class AddBottleComponent implements OnInit {
