@@ -1,16 +1,8 @@
 import 'angular';
 import {HomeComponent} from './home.component';
+// import {HomeRouteComponent} from './homeRoute.component';
 import { upgradeAdapter } from '../../upgradeAdapter';
 
-// import { RouteConfig } from 'angular2-polyfill/router';
-// // @RouteConfig([
-// //     { path: '/home', component: HomeComponent, name: 'home', useAsDefault: false }
-// // ])
-// export  class HomeRouteComponent {
-//     constructor() {
-
-//     }
-// }
 angular.module('app')
     .config(['$stateProvider', ($stateProvider: angular.ui.IStateProvider) => {
         $stateProvider.state('home', {
@@ -18,4 +10,5 @@ angular.module('app')
             url: '/home'
         });
     }])
-    .directive('home', upgradeAdapter.downgradeNg2Component(HomeComponent));
+    // .directive('homeRoute', <angular.IDirectiveFactory> upgradeAdapter.downgradeNg2Component(HomeRouteComponent))
+    .directive('home',<angular.IDirectiveFactory>  upgradeAdapter.downgradeNg2Component(HomeComponent));

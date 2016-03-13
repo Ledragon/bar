@@ -3,6 +3,9 @@ angular.module('app')
     .directive('navbar', () => {
         return {
             templateUrl: 'app/layout/navbar.html',
-            restrict: 'E'
+            restrict: 'E',
+            controller: ($state) => {
+                console.log($state.get());
+            }
         }
     })

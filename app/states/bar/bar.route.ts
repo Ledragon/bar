@@ -7,10 +7,10 @@ angular.module('app')
                 template: '<bar></bar>',
                 url: '/bar'
             })
-            .state('barOverview', {
-                template: '<bar-overview></bar-overview>',
-                url: '/barOverview'
-            })
+            // .state('barOverview', {
+            //     template: '<bar-overview></bar-overview>',
+            //     url: '/barOverview'
+            // })
             .state('addBottle', {
                 template: '<add-bottle></add-bottle>',
                 url: '/addBottle'

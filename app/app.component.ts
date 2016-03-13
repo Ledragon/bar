@@ -13,4 +13,4 @@ export class AppComponent {
 }
 
 angular.module('app')
-    .directive('app', upgradeAdapter.downgradeNg2Component(AppComponent));
+    .directive('app',<angular.IDirectiveFactory>  upgradeAdapter.downgradeNg2Component(AppComponent));
