@@ -20,6 +20,6 @@ import {BarService} from './bar.service'
 @Injectable()
 export class BottleComponent {
     @Input() bottle: bottle;
-    constructor(barService:BarService) {
+    constructor(barService: BarService) {
     }
 }

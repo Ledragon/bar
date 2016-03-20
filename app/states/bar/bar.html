@@ -2,13 +2,15 @@
     <div class="jumbotron">
         <h1>Bar</h1>
     </div>
+    <ul class="nav nav-tabs nav-justified">
+        <li>
+            <a [routerLink]="['Content']">Overview</a>
+        </li>
+        <li>
+            <a [routerLink]="['Add']">Add</a>
+        </li>
+    </ul>
     <div class="container-fluid">
-        <bottle [bottle]="bottle"  *ngFor="#bottle of bottles"></bottle>
-        
-        <div class="row">
-            <div class="col-md-3">
-                <button class="btn" (click)="addBottle()">Add bottle</button>
-            </div>
-        </div>
+        <router-outlet></router-outlet>
     </div>
 </div>

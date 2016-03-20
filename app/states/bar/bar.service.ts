@@ -23,6 +23,5 @@ export class BarService {
 
     add(newBottle: bottle) {
         this._bottles.push(newBottle);
-        console.log(this._bottles);
     }
 }

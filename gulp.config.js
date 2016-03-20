@@ -11,9 +11,8 @@ var config = {
         "node_modules/rxjs/bundles/rx.js",
         "node_modules/angular2/bundles/upgrade.js",
 
-        "node_modules/angular2/bundles/angular2.dev.js",
-        "node_modules/angular2-polyfill/node_module/dot-prop/index.js",
-        "scripts/angular2-polyfill.js"
+        "node_modules/angular2/bundles/router.dev.js",
+        "node_modules/angular2/bundles/angular2.dev.js"
     ]
 };
 
