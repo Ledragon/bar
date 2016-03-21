@@ -4,8 +4,7 @@ import {BarService} from './bar.service'
 
 @Component({
     selector: 'bottle',
-    templateUrl: 'app/components/bar/bottle.html',
-    styleUrls: ['node_modules/material-design-lite/material.min.css']
+    templateUrl: 'app/components/bar/bottle.html'
 })
 
 @Injectable()

@@ -1,1 +1,5 @@
-<bottle [bottle]="bottle" *ngFor="#bottle of bottles"></bottle>
+<div class="mdl-grid">
+    <div class="mdl-dell mdl-dell--4-col" *ngFor="#bottle of bottles">
+        <bottle [bottle]="bottle"></bottle>
+    </div>
+</div>
