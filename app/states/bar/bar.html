@@ -3,11 +3,8 @@
         <h1>Bar</h1>
     </div>
     <ul class="nav nav-tabs nav-justified">
-        <li>
-            <a [routerLink]="['Content']">Overview</a>
-        </li>
-        <li>
-            <a [routerLink]="['Add']">Add</a>
+        <li [class.active]="isActive(name)" *ngFor="#name of routeNames">
+            <a [routerLink]="[name]">{{name}}</a>
         </li>
     </ul>
     <div class="container-fluid">

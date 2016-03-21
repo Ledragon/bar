@@ -1,5 +1,5 @@
-import { Component, Injectable, Inject} from 'angular2/core';
-import { RouteConfig, RouterOutlet, RouterLink } from 'angular2/router';
+import { Component, Injectable, Inject, OnInit} from 'angular2/core';
+import { RouteConfig, RouterOutlet, RouterLink, Router } from 'angular2/router';
 
 import { BarService } from './bar.service';
 import { BottleComponent } from './bottle.component';
@@ -9,7 +9,7 @@ import { BarContentComponent } from './barContent.component';
 
 @RouteConfig([
     { path: 'add', name: 'Add', component: AddBottleComponent, useAsDefault: false },
-    { path: '/', name: 'Content', component: BarContentComponent, useAsDefault: true }
+    { path: '/', name: 'Overview', component: BarContentComponent, useAsDefault: true }
 ])
 
 @Component({
@@ -20,6 +20,17 @@ import { BarContentComponent } from './barContent.component';
 })
 
 @Injectable()
-export class BarComponent {
-    
+export class BarComponent implements OnInit {
+    routeNames: Array<string>;
+
+    constructor(private _router: Router) {
+
+    }
+    ngOnInit() {
+        this.routeNames = ['Overview', 'Add'];
+    }
+
+    isActive(routeName: string): boolean {
+        return this._router.isRouteActive(this._router.generate([routeName]));
+    }
 }

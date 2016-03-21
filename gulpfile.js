@@ -3,7 +3,7 @@ var inject = require('gulp-inject');
 var browserSync = require('browser-sync').create();
 var config = require('./gulp.config');
 
-gulp.task('serve', function () {
+gulp.task('serve', function() {
     browserSync.init({
         server: {
             baseDir: './'
@@ -12,9 +12,9 @@ gulp.task('serve', function () {
     gulp.watch(['./**/*.html', './app/**/*.js'], browserSync.reload);
 });
 
-gulp.task('serve-build', function () {
+gulp.task('serve-build', function() {
     gulp.src('app/**/*.html')
-    .pipe(gulp.dest('./build/app'));
+        .pipe(gulp.dest('./build/app'));
     browserSync.init({
         server: {
             baseDir: './build'
@@ -22,7 +22,7 @@ gulp.task('serve-build', function () {
     });
 });
 
-gulp.task('inject', function () {
+gulp.task('inject', function() {
     return gulp.src('index.html')
         .pipe(inject(gulp.src(config.cssFiles, { read: false })))//css
         .pipe(inject(gulp.src(config.libJsFiles, { read: false }), { name: 'lib' }))//libs js

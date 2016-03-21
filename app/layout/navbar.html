@@ -1,6 +1,5 @@
 <nav class="navbar navbar-inverse">
-        <ul class="nav navbar-nav">
-            <li ui-sref-active="active"><a [routerLink]="['Home']">Home</a></li>
-            <li ui-sref-active="active"><a [routerLink]="['Bar']">Bar</a></li>
-        </ul>
-    </nav>
+    <ul class="nav navbar-nav">
+        <li [class.active]="isActive(route)" *ngFor="#route of routeNames"><a [routerLink]="[route]">{{route}}</a></li>
+    </ul>
+</nav>
