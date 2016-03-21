@@ -12,7 +12,9 @@ var config = {
         "node_modules/angular2/bundles/upgrade.js",
 
         "node_modules/angular2/bundles/router.dev.js",
-        "node_modules/angular2/bundles/angular2.dev.js"
+        "node_modules/angular2/bundles/angular2.dev.js",
+        "node_modules/material-design-lite/material.min.js"
+
     ]
 };
 

@@ -5,7 +5,7 @@ import {BottleComponent} from './bottle.component';
 
 @Component({
     selector: 'bar-content',
-    templateUrl: 'app/states/bar/barContent.html',
+    templateUrl: 'app/components/bar/barContent.html',
     directives: [BottleComponent]
 })
 

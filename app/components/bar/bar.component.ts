@@ -14,7 +14,7 @@ import { BarContentComponent } from './barContent.component';
 
 @Component({
     selector: 'bar',
-    templateUrl: 'app/states/bar/bar.html',
+    templateUrl: 'app/components/bar/bar.html',
     directives: [RouterOutlet, RouterLink, BottleComponent, AddBottleComponent],
     providers: [BarService]
 })
